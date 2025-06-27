@@ -43,6 +43,9 @@ coverage/
 # Ignore Python cache
 __pycache__/
 
+# Ignore project-local Python virtual environment
+.venv/
+
 # Ignore UVM build outputs (if any)
 uvm_build/
 
