@@ -1,0 +1,55 @@
+# Verilator and simulation build artifacts
+obj_dir/
+*.vcd
+*.vpd
+*.log
+*.key
+*.sim
+*.dmp
+*.out
+*.fst
+
+# IDE/editor/project files
+*.swp
+*.swo
+*.bak
+*~
+.DS_Store
+.vscode/
+.idea/
+
+# Logs and temporary files
+logs/
+*.log
+
+# Generated testbench executables
+simv
+simv_uvm
+csrc/
+DVE*
+work/
+
+# Regression and temp scripts
+run_regression.sh
+
+# Ignore generated C++ and Verilator files if not source
+V*.cpp
+V*.h
+V*.o
+
+# Ignore coverage and waveform outputs
+coverage/
+
+# Ignore Python cache
+__pycache__/
+
+# Ignore UVM build outputs (if any)
+uvm_build/
+
+# Ignore Questa/ModelSim outputs
+transcript
+
+# Ignore any other custom or temporary files
+*.tmp
+*.swp
+*.swo
