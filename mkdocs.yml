@@ -1,0 +1,20 @@
+site_name: AI Switch Fabric Documentation
+nav:
+  - Home: index.md
+  - RTL Guide: rtl.md
+  - Verification: verification.md
+  - Usage: usage.md
+theme:
+  name: material
+  palette:
+    primary: 'blue'
+    accent: 'deep orange'
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - toc.integrate
+repo_url: https://github.com/RaghuMurugesan/read_write_block
+repo_name: AI Switch Fabric
