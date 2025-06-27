@@ -24,4 +24,15 @@ This project is organized as follows:
 - Use the files in `uvm/` for a full-featured, coverage-driven UVM verification flow.
 - The RTL is in `rtl/`.
 
-All files are ready to use with standard EDA tools (VCS, Questa, Xcelium, etc.). 
+All files are ready to use with standard EDA tools (VCS, Questa, Xcelium, etc.).
+
+## Limitations: UVM and Verilator
+
+- **UVM (Universal Verification Methodology) testbenches cannot be run with Verilator.**
+  - UVM requires a commercial simulator (such as Synopsys VCS, Siemens Questa, or Cadence Xcelium) due to licensing and tool support.
+  - Open-source tools like Verilator do **not** support UVM testbenches.
+- **This repository uses Verilator for simulation.**
+  - Only simple or SystemVerilog testbenches and RTL can be simulated with Verilator.
+  - UVM-based verification is not possible unless you have access to a commercial simulator and a valid license.
+
+If you need to run UVM testbenches, you must use a commercial simulator on Linux, in a VM, or via a remote/cloud environment with the appropriate license.
